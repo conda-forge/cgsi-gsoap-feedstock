@@ -27,7 +27,7 @@ requirements:
     - gsoap =2.7
     - voms
     - gct
-    - openssl 1.0.2r
+    - openssl
   run:
     - voms
 
