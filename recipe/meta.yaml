@@ -10,7 +10,7 @@ source:
   sha256: 5fe3d8741f906dc77a13e61871d18bcf0a6deab6dd70fb0b0c977b4ef61ff924
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # Only pin on Linux as static libaries are used on macOS
@@ -24,10 +24,10 @@ requirements:
     - make
     - pkg-config
   host:
-    - gsoap =2.7
+    - gsoap 
     - voms
     - gct
-    - openssl 1.0.2r
+    - openssl
   run:
     - voms
 
