@@ -24,7 +24,7 @@ requirements:
     - make
     - pkg-config
   host:
-    - gsoap =2.7
+    - gsoap 
     - voms
     - gct
     - openssl
