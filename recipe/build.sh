@@ -5,7 +5,6 @@ mkdir build
 cd build
 
 cmake ${CMAKE_ARGS} \
-    "${CMAKE_PLATFORM_FLAGS[@]}" \
     -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
     -DLIB_SUFFIX="" \
     -DGSOAP_WSDL2H=$BUILD_PREFIX/bin/wsdl2h \
