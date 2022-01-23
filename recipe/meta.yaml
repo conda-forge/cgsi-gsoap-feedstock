@@ -23,6 +23,7 @@ requirements:
     - cmake
     - make
     - pkg-config
+    - gsoap
   host:
     - gsoap 
     - voms
