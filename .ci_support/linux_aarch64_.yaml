@@ -21,7 +21,7 @@ docker_image:
 gct:
 - 6.2.1629922860
 gsoap:
-- 2.8.117
+- 2.8.119
 openssl:
 - 1.1.1
 target_platform:

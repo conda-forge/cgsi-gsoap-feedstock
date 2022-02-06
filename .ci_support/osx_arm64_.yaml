@@ -15,7 +15,7 @@ cxx_compiler_version:
 gct:
 - 6.2.1629922860
 gsoap:
-- 2.8.117
+- 2.8.119
 macos_machine:
 - arm64-apple-darwin20.0.0
 openssl:
