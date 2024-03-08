@@ -10,7 +10,7 @@ source:
   sha256: 5fe3d8741f906dc77a13e61871d18bcf0a6deab6dd70fb0b0c977b4ef61ff924
 
 build:
-  number: 7
+  number: 8
   skip: true  # [win]
   run_exports:
     # Only pin on Linux as static libaries are used on macOS
