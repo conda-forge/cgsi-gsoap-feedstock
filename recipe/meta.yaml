@@ -1,5 +1,5 @@
 {% set name = "cgsi-gsoap" %}
-{% set version = "1.3.11" %}
+{% set version = "1.3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://gitlab.cern.ch/dmc/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
-  sha256: 5fe3d8741f906dc77a13e61871d18bcf0a6deab6dd70fb0b0c977b4ef61ff924
+  sha256: 630f78b2402b30bd9e1ecbfbeda638745d98638e6de0544ae0b493875647a26d
 
 build:
-  number: 8
+  number: 0
   skip: true  # [win]
   run_exports:
     # Only pin on Linux as static libaries are used on macOS
@@ -19,13 +19,14 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - make
     - pkg-config
     - gsoap
   host:
-    - gsoap 
+    - gsoap
     - voms
     - gct
     - openssl
